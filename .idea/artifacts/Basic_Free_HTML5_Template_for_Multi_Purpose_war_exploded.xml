@@ -2,10 +2,10 @@
   <artifact type="exploded-war" name="Basic-Free-HTML5-Template-for-Multi-Purpose:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/Basic_Free_HTML5_Template_for_Multi_Purpose_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="Basic-Free-HTML5-Template-for-Multi-Purpose/web/Web" />
+      <element id="javaee-facet-resources" facet="Maxis/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="Basic-Free-HTML5-Template-for-Multi-Purpose" />
+          <element id="module-output" name="Maxis" />
         </element>
       </element>
     </root>
