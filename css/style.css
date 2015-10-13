@@ -1,5 +1,5 @@
 
-@import url('http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700'); 
+@import url('http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700');
 @import url('font-awesome.css');  
 @import url('animate.css');
 
@@ -1858,10 +1858,10 @@ a:hover {
 .jssora11r.jssora11rdn { background-position: -311px -41px; }
 
 .leftarrow {
-    top: 154px; left: -26px;
+    top: 151px; left: -26px;
 }
 .rightarrow{
-    top: 154px; right: 8px;
+    top: 151px; right: 8px;
 }
 
 /*arrow stop*/
