@@ -1298,7 +1298,7 @@ border: 1px solid #e6e6e6;
 
 .pricing-box-item .pricing-terms {
 	text-align: center;
-	background: #0E987E;
+	background: #003399;
 	display: block;
 	overflow: hidden;
 	padding: 11px 0 5px; 
@@ -1840,7 +1840,7 @@ a:hover {
 }
 
 /*menu slide arrow start*/
-.jssora11l, .jssora11r {
+.arrowl, .arrowr {
     display: block;
     position: absolute;
     /* size of arrow element */
@@ -1850,12 +1850,12 @@ a:hover {
     background: url(../img/a11.png) no-repeat;
     overflow: hidden;
 }
-.jssora11l { background-position: -11px -41px; }
-.jssora11r { background-position: -71px -41px; }
-.jssora11l:hover { background-position: -131px -41px; }
-.jssora11r:hover { background-position: -191px -41px; }
-.jssora11l.jssora11ldn { background-position: -251px -41px; }
-.jssora11r.jssora11rdn { background-position: -311px -41px; }
+.arrowl { background-position: -11px -41px; }
+.arrowr { background-position: -71px -41px; }
+.arrowl:hover { background-position: -131px -41px; }
+.arrowr:hover { background-position: -191px -41px; }
+.arrowl.arrowldn { background-position: -251px -41px; }
+.arrowr.arrowrdn { background-position: -311px -41px; }
 
 .leftarrow {
     top: 151px; left: -26px;
