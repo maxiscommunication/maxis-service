@@ -561,7 +561,7 @@ section.callaction {
 	position:relative;
 	margin:0;
 	padding:0;
-	color: #FFFFFF;
+	color: #656565;
 }
 
 
@@ -1254,7 +1254,7 @@ color: #222;
 	background:#fd0000;
 }
  .pricing-box-item {
-border: 1px solid #e6e6e6;
+border: 0px solid #003399;
 	background:#fcfcfc;
 	position:relative;
 	margin:0 0 20px 0;
@@ -1297,16 +1297,17 @@ border: 1px solid #e6e6e6;
 }
 
 .pricing-box-item .pricing-terms {
-	text-align: center;
+	text-align: left;
 	background: #003399;
 	display: block;
 	overflow: hidden;
-	padding: 11px 0 5px; 
+	padding: 11px 0 5px;
 }
 
 .pricing-box-item .pricing-terms  h6 {
 	font-style:italic;
 	margin-top:10px;
+    margin-left: 50px;
 	color:#fff;
 	font-size:17px;
 	font-family:'Noto Serif', serif;
@@ -1778,7 +1779,7 @@ padding-top: 12px;
 }
 /* Brand Scrolling Start*/
 .slider-container {
-    position: relative; top: 0px; left: 0px;width: 980px; height: 100px; overflow: hidden;
+    position: relative; top: 0px; left: 44px;width: 980px; height: 100px; overflow: hidden;
 }
 
 .loading-screen {
