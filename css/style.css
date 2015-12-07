@@ -941,7 +941,12 @@ text-align: center;
 margin-left: 6px;
 /* background: #046E5A; */
 font-weight: bold;
-}  
+}
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    float: right;        /* adjust as needed */
+   /* color: grey;         *//* adjust as needed */
+}
 .progress.pb-sm {
 height: 6px!important;
 }
