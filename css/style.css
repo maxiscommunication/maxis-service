@@ -10,7 +10,27 @@ body {
 	line-height:1.6em;
 	color:#656565;
 }
-
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+.t01 tr:nth-child(odd) {
+    background-color:#fff;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+.t01 th	{
+    background-color: #587094;
+    color: white;
+}
 
 
 a:active {
