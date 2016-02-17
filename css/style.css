@@ -80,7 +80,7 @@ img.img-polaroid {
 	margin:0 0 20px 0;
 }
 .img-box {
-    max-width: 67%;
+    max-width: 100%;
 
 }
 /*  Header
@@ -636,7 +636,7 @@ border-radius: 50%;
 width: 85px;
 height: 85px;
 background: rgb(255, 255, 255);
-padding-top: 22px;
+padding-top: 17px;
 }
 .featured_content h3 a{
 font-size: 1.1em;
