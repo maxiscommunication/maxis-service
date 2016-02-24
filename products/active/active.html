@@ -183,7 +183,7 @@
                                 </a>
                             </h4>
                         </div>
-                        <div id="testerTwisted" class="panel-collapse collapse in">
+                        <div id="testerTwisted" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                                 <img src="../../img/pro/active/test1.png">
@@ -586,5 +586,13 @@
 <script src="../../js/owl-carousel/owl.carousel.js"></script>
 <script src="../../js/portfolio/dropdownmenu.js"></script>
 <script src="../../js/portfolio/menu-scroll.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        jQuery(function() {
+            var anchor = location.hash.substring(1);
+            $("#"+anchor).collapse('show');
+        });
+    });
+</script>
 </body>
 </html>
