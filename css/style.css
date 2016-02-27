@@ -354,7 +354,7 @@ display: inline-block;
 
 .mega-dropdown { position: static !important; }
 .mega-dropdown-menu {
-    padding: 20px 15px 15px;
+    padding: 10px 8px;
     text-align: center;
     width: 100%;
 
@@ -1884,10 +1884,10 @@ a:hover {
 .arrowr.arrowrdn { background-position: -311px -41px; }
 
 .leftarrow {
-    top: 151px; left: -26px;
+    top: 121px; left: -18px;
 }
 .rightarrow{
-    top: 151px; right: 8px;
+    top: 121px; right: 0px;
 }
 
 /*arrow stop*/
