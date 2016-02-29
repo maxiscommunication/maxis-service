@@ -1,6 +1,4 @@
-/**
- * Created by murali on 5/10/15.
- */
+
 jQuery(document).ready(function ($) {
 
     var options = {

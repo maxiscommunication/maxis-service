@@ -93,7 +93,7 @@
                                                 <div class="item"><a href="products/tel/telephone.html#telcoPlug"><img src="img/pro/menu/telco.png" alt=""><div class="caption"><span>TELCO Plug,25 Pair Cat3 Male</span></div> </a></div>
                                                 <div class="item"><a href="products/tel/telephone.html#telcoPlugF"><img src="img/pro/menu/telcofemale.png" alt=""><div class="caption"><span>TELCO Plug,25 Pair Cat3 Female</span></div> </a></div>
                                                 <div class="item"><a href="products/tel/telephone.html#indoorTel"><img src="img/pro/menu/indtc.png" alt=""><div class="caption"><span>Indoor Telephone Cable</span></div> </a></div>
-                                                <div class="item"><a href="products/tel/telephone.html#unshieldTel"><img src="img/pro/menu/utc.png" alt=""><div class="caption"><span>Unshielded Telephone Cable</span></div> </a></div>
+                                                <div class="item"><a href="products/tel/telephone.html#unshieldTel"><img src="img/pro/menu/uTelephonecable.png" alt=""><div class="caption"><span>Unshielded Telephone Cable</span></div> </a></div>
                                                 <div class="item"><a href="products/tel/telephone.html#disBox"><img src="img/pro/menu/b3.png" alt=""><div class="caption"><span>Distribution Boxes,Krone Type</span></div> </a></div>
                                                 <div class="item"><a href="products/tel/telephone.html#kroneType"><img src="img/pro/menu/b5.png" alt=""><div class="caption"><span>Krone Mounting Frames for Krone Modules</span></div> </a></div>
                                                 <div class="item"><a href="products/tel/telephone.html#connMod"><img src="img/pro/menu/c1.png" alt=""><div class="caption"><span>Connection Modules,Kron Type</span></div> </a></div>
@@ -194,26 +194,27 @@
 									<div class="contact-form">
 										<form id="feedbackForm" role="form">
                                             <div class="form-group has-feedback">
-                                                <label class="control-label" for="name">Name</label>
+                                                <label class="control-label" for="name">Name*</label>
                                                 <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name" required/>
-                                                <i class="glyphicon glyphicon-unchecked form-control-feedback"></i>
+                                                <i class="fa fa-user form-control-feedback"></i>
+
                                                 <span class="help-block" style="display: none;">Please enter your name.</span>
                                             </div>
 
 											<div class="form-group has-feedback">
-												<label class="control-label" for="email">Email</label>
+												<label class="control-label" for="email">Email*</label>
 												<input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Valid E-Mail Id" required/>
-												<i class="glyphicon glyphicon-unchecked form-control-feedback"></i>
+												<i class="fa fa-envelope form-control-feedback"></i>
                                                 <span class="help-block" style="display: none;">Please enter a valid e-mail id.</span>
 											</div>
                                             <div class="form-group has-feedback">
-                                                <label class="control-label" for="phone">Contact</label>
+                                                <label class="control-label" for="phone">Contact*</label>
                                                 <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone" required/>
-                                                <i class="glyphicon glyphicon-unchecked form-control-feedback"></i>
+                                                <!--<i class="glyphicon glyphicon-unchecked form-control-feedback"></i>-->
                                                 <span class="help-block" style="display: none;">Please enter a valid phone number.</span>
                                             </div>
                                             <div class="form-group has-feedback">
-                                                <label class="control-label" for="email">Request for services</label>
+                                                <label class="control-label">Request for services</label>
                                                 <select name="reason" class="form-control">
                                                     <option value="General Inquiry">General Inquiry</option>
                                                     <option value="Place Order">Place Order</option>
@@ -224,7 +225,8 @@
 											<div class="form-group has-feedback">
 												<label class="control-label" for="message">How can we help you ?</label>
 												<textarea class="form-control" rows="6" id="message" name="message" placeholder="Enter Your Message Here !" required></textarea>
-												<i class="glyphicon glyphicon-unchecked form-control-feedback"></i>
+												<i class="fa fa-pencil form-control-feedback"></i>
+
                                                 <span class="help-block" style="display: none;">Please enter your message.</span>
 											</div>
                                            <div class="form-group has-feedback">
@@ -325,9 +327,6 @@
     </footer>
 </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-<!-- javascript
-    ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="js/jquery.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -346,9 +345,20 @@
 <script src="js/owl-carousel/owl.carousel.js"></script>
 <script src="js/portfolio/dropdownmenu.js"></script>
 <script src="js/portfolio/menu-scroll.js"></script>
-<script src="du/index/dumm.js"></script>
-<script src="du/index/jssor.slider.js"></script>
-<script src="du/index/jssor.js"></script>
+<script src="du/index/sliderD.js"></script>
+<script src="du/index/sliderJ2.js"></script>
+<script src="du/index/sliderJ.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-74396775-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
 
 </body>
 </html>

@@ -1,6 +1,3 @@
-/**
- * Created by murali on 12/10/15.
- */
 $(document).ready(function() {
 
     var owl = $(".owl-comm");
