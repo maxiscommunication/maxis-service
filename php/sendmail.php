@@ -77,20 +77,20 @@
 			$mail->CharSet = 'UTF-8';
 			$mail->isSMTP();
 			// $mail->Host = "smtp.gmail.com";
-			$mail->Host = "ssl://smtp.gmail.com";
+			$mail->Host = "localhost";
 			$mail->SMTPAuth = true;
-			$mail->From = "muralimuhesh1@gmail.com";
-			$mail->Username = "muralimuhesh1@gmail.com";
-			$mail->Password = "Sql_Java_91";
-			
+			$mail->Username = "enquiry@maxiscom.com";
+			$mail->Password = "SAMSUNG#*1";
+			$mail->AddCC("shankar@maxiscom.com");
+						
 			// $mail->SMTPSecure = 'tls';
 			$mail->SMTPSecure = 'ssl';
 			// $mail->Port = 587;
-			$mail->Port = 465;
+			$mail->Port = 25;
 			
 			$mail->setFrom($_POST['email'], $_POST['name']);
-			// $mail->addAddress("murali.radhakrishnan@saggezza.com");
-			$mail->addAddress("murali.radhakrishnan@saggezza.com");
+			$mail->addAddress("santhosh@maxiscom.com");
+			$mail->addAddess("enquiry@maxiscom.com");
 			
 			$mail->Subject = $_POST['reason'];
 			$mail->Body  = $messageBody;
