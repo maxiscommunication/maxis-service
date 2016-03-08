@@ -66,48 +66,44 @@
 		$_SERVER["REMOTE_ADDR"],
 		$_POST["recaptcha_challenge_field"],
 		$_POST["recaptcha_response_field"]);
-		
+
         if ($resp->is_valid)
 		{
-			//echo "You got it!";
-			//attempt to send email
 			$messageBody = constructMessageBody();
-			require './vender/php_mailer/PHPMailerAutoload.php';
+			require dirname(__FILE__).'/vender/php_mailer/PHPMailerAutoload.php';
+			
 			$mail = new PHPMailer;
 			$mail->CharSet = 'UTF-8';
 			$mail->isSMTP();
-			// $mail->Host = "smtp.gmail.com";
-			$mail->Host = "localhost";
 			$mail->SMTPAuth = true;
+                        $mail->Host = "localhost";
+                      //$mail->Host = "115.112.232.28";
 			$mail->Username = "enquiry@maxiscom.com";
 			$mail->Password = "SAMSUNG#*1";
-			$mail->AddCC("shankar@maxiscom.com");
-						
-			// $mail->SMTPSecure = 'tls';
-			$mail->SMTPSecure = 'ssl';
+			//$mail->AddCC("shankar@maxiscom.com");
+			//$mail->SMTPSecure = 'tls';
+			//$mail->SMTPSecure = 'ssl';
 			// $mail->Port = 587;
 			$mail->Port = 25;
 			
 			$mail->setFrom($_POST['email'], $_POST['name']);
-			$mail->addAddress("santhosh@maxiscom.com");
-			$mail->addAddess("enquiry@maxiscom.com");
+			//$mail->addAddress("santhosh@maxiscom.com");
+			$mail->addAddress("enquiry@maxiscom.com");
 			
 			$mail->Subject = $_POST['reason'];
 			$mail->Body  = $messageBody;
-			
-			// echo "<br>--reason--".$_POST["reason"];
-			// die();
 			
 			//try to send the message
 			if($mail->send()) {
 				echo json_encode(array('message' => 'Your message was successfully submitted.'));
 			} else {
-				//echo "<pre>"; print_r($mail);
 				errorResponse('An expected error occured while attempting to send the email: ' . $mail->ErrorInfo);
 			}
 		} else {
 			# set the error code so that we can display it
 			$error = $resp->error;
+			echo json_encode(array('message' => $error));
 		}
 	}
 ?>
+

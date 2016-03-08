@@ -466,6 +466,7 @@ bottom: -30px;
 }
 /* Testimonial
 ----------------------------------*/
+/*
 .testimonial-area {
 padding: 0 0 0 0;
 margin:0;
@@ -485,6 +486,7 @@ section.callaction {
 	background:#fff;
 	padding:50px 0 0 0;
 }
+*/
 
 
 
@@ -1804,7 +1806,7 @@ padding-top: 12px;
 }
 /* Brand Scrolling Start*/
 .slider-container {
-    position: relative; top: 0px; left: 44px;width: 980px; height: 100px; overflow: hidden;
+    position: relative; top: 0px; left: 44px;width: 980px; height: 100px; overflow: hidden; align-content: center;
 }
 
 .loading-screen {
@@ -1813,7 +1815,7 @@ padding-top: 12px;
 }
 
 .brand-slides {
-    cursor: move; position: absolute; left: 0px; top: 0px; width: 980px; height: 100px; overflow: hidden;
+    cursor: move; position: absolute; left: 0px; top: 0px; width: 100%; height: 100px; overflow: hidden;
 }
 
 /*Stop*/
