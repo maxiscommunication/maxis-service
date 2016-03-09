@@ -27,12 +27,12 @@
 	};
 	
 	$(document).ready(function() {
-		
-		if ($("#phone").intlTelInput) {
-			$("#phone").intlTelInput({validationScript: "js/isValidNumber.js"});
+
+		/*if ($("#phone").intlTelInput) {
+			$("#phone").intlTelInput({validationScript: "isValidNumber"});
 			$(".intl-tel-input.inside").css('width', '100%');
-		}
-		
+		}*/
+
 		$("#feedbackSubmit").click(function() {
 			// alert("test feedbackSubmit");
 			// return false;

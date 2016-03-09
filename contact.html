@@ -10,8 +10,12 @@
 <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
 <link href="css/flexslider.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
- 
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<link rel="stylesheet" href="css/phonecss/prism.css">
+<link rel="stylesheet" href="css/phonecss/intlTelInput.css?1456859475147">
+<link rel="stylesheet" href="css/phonecss/isValidNumber.css?1456859475147">
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -209,10 +213,12 @@
 											</div>
                                             <div class="form-group has-feedback">
                                                 <label class="control-label" for="phone">Contact*</label>
-                                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone" required/>
+                                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="" required/>
                                                 <!--<i class="glyphicon glyphicon-unchecked form-control-feedback"></i>-->
                                                  <i class="fa fa-phone form-control-feedback"></i>
-                                                <span class="help-block" style="display: none;">Please enter a valid phone number.</span>
+                                                <!--<span class="help-block" id="error-msg" style="display: none;">Please enter a valid phone number.</span>-->
+                                                <span id="valid-msg" class="help-block" style="display: none;">Valid</span>
+                                                <span id="error-msg" class="help-block" style="display: none;">Invalid number</span>
                                             </div>
                                             <div class="form-group has-feedback">
                                                 <label class="control-label">Request for services</label>
@@ -334,16 +340,16 @@
 <script src="js/animate.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/validate.js"></script>
-<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
-<script src="js/intlTelInput.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
 <script src="js/contact-form.js"></script>
 <script src="js/owl-carousel/owl.carousel.js"></script>
 <script src="js/portfolio/dropdownmenu.js"></script>
 <script src="js/portfolio/menu-scroll.js"></script>
-<script src="du/index/sliderD.js"></script>
-<script src="du/index/sliderJ2.js"></script>
-<script src="du/index/sliderJ.js"></script>
+<script src="js/phonejs/prism.js"></script>
+<script src="js/intlTelInput.js?1456859475147"></script>
+<script src="js/phonejs/isValidNumber.js?1456859475147"></script>
+<script src="js/phonejs/defaultCountryIp.js?1456859475147"></script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -353,8 +359,9 @@
     ga('create', 'UA-74396775-1', 'auto');
     ga('send', 'pageview');
 
+/*Phone validation*/
+    $("#phone").intlTelInput();
+
 </script>
-
-
 </body>
 </html>
